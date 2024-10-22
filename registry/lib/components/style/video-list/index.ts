@@ -52,6 +52,15 @@ const entry = async (context: ComponentEntryContext<VideoListOptions>) => {
       list.style.height = '100%'
     }
   }
+
+  // 20241022
+  {
+    const list = dq('.video-pod__body') as HTMLMetaElement
+    if (list) {
+      list.style.maxHeight = maxHeight
+      list.style.height = '100%'
+    }
+  }
 }
 
 export const component = defineComponentMetadata({
